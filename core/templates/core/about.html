@@ -1,0 +1,56 @@
+{% extends 'core/base.html' %}
+{% load static %}  
+
+{% block title %}Acerca de{% endblock %}
+
+{% block background %} {% static 'core/img/acerca.jpg' %} {% endblock %}
+
+{% block headers %}
+    <h1> Hoja de vida</h1>
+    <h2> Acerca de </h2>
+{% endblock %}
+
+{% block content %}
+    
+    
+    <a href="#aqui" name="aqui"> <h1 class="experiencias"> Experiencia Laboral </h1> </a>
+        <ul>
+            <li class="retail" >
+                <h2> Supervisor de mantenimiento</h2>
+                <h3> Empresa : <a href="http://www.rmconsulting.com.pe/public/" target="_blank"> Retail and Marketing Consulting </a></h3>
+                <p> Planificación y control de mantenimiento del <a target="_blank" href="https://patiopanorama.pe/"> Life Style Center Patio Panorama </a>
+                    (Lima) | Presupuesto de Mantenimiento y CAPEX | Control de Operaciones |
+                    Supervisor en campo de mantenimientos de Subestaciones de MT 22.9Kv, Grupos
+                    Electrógenos y Sistema BMS. 
+                </p>
+            </li>
+            <li class="costa" >
+                <h2> Jefe de mantenimiento</h2>
+                <h3> Empresa : <a href="https://www.costadelsolperu.com/" target="_blank" > Costa del Sol </a></h3>
+                <p> Ejecución del Primer Centro Comercial en Tumbes <a target="_blank" href="https://www.costadelsolperu.com/costa-mar-plaza-anuncia-centro-comercial-tumbes/"> Costa Mar Plaza </a> |
+                    Contruccion del Supermercado Metro-Cencosud |
+                    Planificación y presupuesto anual de mantenimiento | Supervisor de
+                    Mantenimiento para Subestaciones y Grupos Electrógenos
+                </p>
+            </li>
+            <li class="asistente">
+                <h2> Asistente de ingeniería </h2>
+                <h3> Empresa : <a href="https://www.hobconsultores.com/" target="_blank" > HOB Consultores </a></h3>
+                <p> Actividades de investigación, desarrollo e innovación tecnológica | 
+                    <a target="_blank" href="https://hobinnova.pe/"> HOB Innova </a> |
+                    Diseño y protecciones eléctricas de dispositivos de control, equipos de
+                    auscultación HOB - ROUGH
+                </p>
+            </li>
+            <li class="residente">
+                <h2> Residente en Obra </h2>
+                <h3> Empresa : <a href="http://www.cimexweb.com/" target="_blank" > CIMEX </a></h3>
+                <p> Diseño eléctrico (Dialux) y construcción del Centro de Negocios 3era y 10 Playa-La Habana | Presupuesto
+                    anual | Cronograma de mantenimiento (MS Project)
+                </p>
+            </li>
+        </ul>
+    
+    
+       
+{% endblock %}

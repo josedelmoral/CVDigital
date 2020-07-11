@@ -1,0 +1,28 @@
+{% extends 'core/base.html' %}
+{% load static %}  
+
+{% block title %} Contacto {% endblock %}
+
+{% block background %} {% static 'core/img/contacto.png' %} {% endblock %}
+{% block headers %}
+    <h1>José del Moral </h1>
+    <h2> Ingeniero Electricista </h2>
+{% endblock %}
+
+
+{% block content %}
+    <a href="#aqui" name="aqui"> <h2 class="redes">Redes sociales</h2> </a>
+    
+    <ul class="redes_sociales">
+        <li class="email">
+            <a href="mailto:jdelmoralinigo@gmail.com"> <img src="{% static 'core/img/email.png' %}" alt="Email"> </a>
+        </li>
+        <li>
+            <a href="http://www.linkedin.com/in/josedelmoral1990" target="_blank"> <img src="{% static 'core/img/link.png' %}" alt="LinkedIn" > </a>
+        </li>
+        <li>
+            <a href="https://twitter.com/jose_cuba90" target="_blank"> <img src="{% static 'core/img/twitter.png' %}" alt="Twitter" > </a>
+        </li>
+    </ul>
+    
+{% endblock %}

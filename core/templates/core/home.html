@@ -1,0 +1,37 @@
+{% extends 'core/base.html' %}
+{% load static %}   
+
+{% block title %}Portada{% endblock %}
+
+{% block background %} {% static 'core/img/home.jpg' %} {% endblock %}
+
+{% block headers %}
+    <h1> Bienvenidos </h1>
+    <h2> Inicio </h2>
+{% endblock %}
+
+{% block content %}
+    
+    <a href="#aqui" name="aqui"> <h2 class="resumen"> Resumen </h2> </a>
+    <ul class="resu">
+        <li>
+          <img src="{% static 'core/img/perfil.jpg' %}" alt="Jose"> </a>
+        </li>
+    </ul>
+    <ul class="resu1">
+        <li>
+            <h1> José Armando del Moral Iñigo </h1>
+            <h2> Ingeniero Electricista </h2>
+            <p>Tengo 29 años, graduado a los 24 de Ingeniero Electricista, 
+                cuento con experiencia en el sector Retail en el diseño, ejecucion y 
+                mantenimiento electrico, he trabajado en empresas como Costa del Sol, 
+                Retail and Marketing Consulting  HOB Consultores donde me he desempañado como supervisor de manteniento, 
+                demostrando no solo en el área tecnica (PMP, MS.Project, AutoCad, Dialux) sino tambien en el área 
+                administrativa con el diseño de Software de mantenimeinto (Python - Django - Tkinter) y análisis 
+                de data (PowerBi).</p>
+        </li>
+    </ul>
+    
+  
+      
+{% endblock %}

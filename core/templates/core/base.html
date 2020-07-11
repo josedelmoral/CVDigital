@@ -1,0 +1,57 @@
+<!-- Estilos y fuentes del template  -->
+
+{% load static %}
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{% block title %}{% endblock %} | Personal Web   </title>
+    <link rel="stylesheet" href="{% static 'core/css/style.css' %}">
+    <style>
+        div {
+          background-image: url('{% block background %} {% endblock %}');
+          background-repeat: no-repeat;
+          background-size: 100% 100%;
+          background-attachment: fixed;
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+        <h1> CURRÍCULUM DIGITAL </h1>  
+    </header>
+    <nav>
+        <h2> José del Moral </h2>
+        <ul>
+            <li >
+                <a  href="{% url 'home' %}">Inico</a>
+            </li>
+            <li >
+                <a  href="{% url 'about' %}">Acerca de</a>
+            </li>
+            <li >
+                <a  href="{% url 'portafolio' %}">Portafolio</a>
+            </li>
+            <li >
+                <a  href="{% url 'contact' %}">Contacto</a>
+            </li>
+        </ul>
+    </nav> 
+    <div class="imagen">
+        <span> &copy; </span>
+        {% block headers %} {% endblock %}
+    </div>
+    {% block content %} {% endblock %}
+    
+
+</body>
+
+<footer>
+    <h1>Creado por José del Moral &copy; 2020 </h1>
+</footer>
+</html>

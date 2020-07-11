@@ -1,0 +1,52 @@
+{% extends 'core/base.html' %}
+{% load static %}  
+
+{% block title %} Portafolio {% endblock %}
+
+{% block background %} {% static 'core/img/portafolio.jpg' %} {% endblock %}
+{% block headers %}
+    <h1> CV </h1>
+    <h2> Portafolio </h2>
+{% endblock %}
+
+{% block content %}
+    <a href="#aqui" name="aqui"> <h2 class="redes"> Diplomas & Certificados </h2> </a>
+    
+    <span class="certific">
+        <ul >
+            <li>
+                <img src="{% static 'core/img/titulo.jpg' %}" alt="Jose"> </a>
+                <h2> Título | Ingeniero Electricista </h2>
+                <a href="http://cujae.edu.cu/" target="_blank"> Universidad Tecnológica de La Habana José Antonio Echeverría </a>
+                <p> Folio: 2162 #55140 Ministerio de Educación Superior de Cuba (MES)</p>
+                <p> Folio: 454 #14732 Facultad de Eléctrica </p>
+                <h4> 09/2009 | 07/2014</h4>
+            </li>
+            <li>
+                <img src="{% static 'core/img/data.jpg' %}" alt="Jose" width="550"> </a>
+                <h2> DAT207x | Analyzing and Visualizing Data with Power BI </h2>
+                <a href="https://courses.edx.org/certificates/5c79f534d2784509a2ceec053c953d1d" target="_blank"> edX | Microsoft Corporation </a>
+                <p> VERIFIED | CERTIFICATE of ACHIEVEMENT</p>
+                <p> VALID CERTIFICATE ID | 5c79f534d2784509a2ceec053c953d1d </p>
+                <h4> 06/2020 </h4>
+            </li>
+            <li>
+                <img src="{% static 'core/img/udemy.jpg' %}" alt="Jose" width="550"> </a>
+                <h2> Master en Python | Python3 & Django & Tkinter & Flask </h2>
+                <a href="https://www.udemy.com/certificate/UC-a320331c-0572-49ec-8e36-a3d24a9210c9/" target="_blank"> Udemy, Inc. </a>
+                <p> VERIFIED | CERTIFICATE of ACHIEVEMENT</p>
+                <p> VALID CERTIFICATE ID | 5c79f534d2784509a2ceec053c953d1d </p>
+                <h4> 07/2020 </h4>
+            </li>
+            <li>
+                <img src="{% static 'core/img/linkedin.jpg' %}" alt="Jose" width="550"> </a>
+                <h2> Fundamentos esenciales de la programación </h2>
+                <a href="http://www.linkedin.com/in/josedelmoral1990" target="_blank"> LinkedIn Learning </a>
+                <p> VERIFIED | CERTIFICATE of ACHIEVEMENT</p>
+                <p> VALID CERTIFICATE ID | AWxfd0LYSWa6fvQNg0r6-TPkmbph </p>
+                <h4> 05/2020 </h4>
+            </li>
+        </ul>
+    </span>     
+   
+{% endblock %}
